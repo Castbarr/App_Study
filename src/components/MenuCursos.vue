@@ -1,0 +1,25 @@
+<template>
+<ul>
+    <q-item>
+    <q-btn 
+        flat 
+        rounded 
+        dense
+        no-wrap
+        color="primary" 
+        icon="arrow_back" 
+        label="Inicio"
+        @click="$router.push('/')" 
+    />
+    </q-item>
+    <q-item>
+    <q-btn 
+        flat 
+        rounded 
+        color="primary" 
+        label="Modulo 1" 
+        @click="$router.push('/ModuloUno')" 
+    />
+    </q-item>
+</ul>
+</template>
