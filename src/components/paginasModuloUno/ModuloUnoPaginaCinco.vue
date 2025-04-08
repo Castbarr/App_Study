@@ -53,7 +53,7 @@
                 <q-card-section class="q-pa-none">
                     <iframe 
                     width="560" height="315" 
-                    src="https://www.youtube.com/embed/Wquylz_un6w?si=FY3Yjr8rMjtDBVpH" 
+                    src="https://www.youtube.com/embed/VzIdJubCv00?si=HYzPMzhBjFMPN0e1" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; 
                     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                     web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -100,13 +100,39 @@ const tiposDeMemoriaRam = () => {
             </div>',
     message: 
     "<ul>\
-        <li><strong>Unidad de Control (CU):</strong><br> Es la parte responsable de dirigir y coordinar todas las operaciones del CPU. Traduce las instrucciones de los programas en señales que controlan las demás partes del procesador.</li>\
-        <li><strong>Unidad Aritmético-Lógica (ALU):</strong><br> Realiza operaciones matemáticas (como suma y resta) y lógicas (como comparaciones). Es fundamental para realizar cálculos y tomar decisiones básicas.</li>\
-        <li><strong>Registros:</strong><br> Son pequeñas áreas de almacenamiento dentro del CPU. Guardan datos e instrucciones temporales para que el procesador pueda acceder a ellos rápidamente durante las operaciones.</li>\
-        <li><strong>Cache:</strong><br> Una memoria de acceso rápido que guarda información frecuente o recientemente utilizada. Ayuda a acelerar el procesamiento al reducir el tiempo de acceso a datos.</li>\
-        <li><strong>Buses:</strong><br> Son líneas de comunicación que transportan datos, direcciones y señales de control entre las distintas partes del CPU y hacia otros componentes de la computadora, como la memoria.</li>\
-        <li><strong>Decodificador de instrucciones:</strong><br> Interpreta las instrucciones que vienen del programa y las traduce para que puedan ser ejecutadas por la ALU y otras unidades.</li>\
-        <li><strong>Reloj (Clock):</strong><br> Genera pulsos eléctricos que sincronizan las operaciones del CPU. La velocidad del reloj determina qué tan rápido puede ejecutar instrucciones.</li>\
+        <li><strong>1. DDR4 (Double Data Rate 4):</strong><br>\
+            <ul>\
+                <li>Es el estándar más común en dispositivos modernos como computadoras de escritorio, laptops y servidores.</li>\
+                <li>Ofrece velocidades rápidas, bajo consumo de energía y capacidades de almacenamiento mayores que las generaciones anteriores.</li>\
+                <li>Su frecuencia suele oscilar entre 2133 MHz y 3200 MHz (o más en versiones optimizadas).</li>\
+            </ul>\
+            </li>\
+        <li><strong>2. DDR5 (Double Data Rate 5):</strong><br>\
+            <ul>\
+                <li>Es la evolución más reciente de la RAM DDR y está ganando popularidad rápidamente.</li>\
+                <li>Proporciona mayor ancho de banda, menor latencia y una eficiencia energética aún mejor que DDR4.</li>\
+                <li>Ideal para tareas de alto rendimiento como gaming, edición de video y aprendizaje automático.</li>\
+            </ul>\
+            </li>\
+        <li><strong>3. LPDDR (Low-Power DDR):</strong><br>\
+            <ul>\
+                <li>Se utiliza en dispositivos móviles como smartphones, tablets y ultrabooks.</li>\
+                <li>Diseñada para un consumo energético reducido, prolonga la duración de la batería en dispositivos portátiles.</li>\
+                <li>Ejemplos recientes son LPDDR4 y LPDDR5.</li>\
+            </ul>\
+            </li>\
+        <li><strong>4. GDDR (Graphics Double Data Rate):</strong><br>\
+            <ul>\
+                <li>Memoria especializada para tarjetas gráficas (GPUs) en aplicaciones como videojuegos, edición 3D y minería de criptomonedas.</li>\
+                <li>Ejemplos actuales incluyen GDDR5, GDDR6 y GDDR6X, que ofrecen alta velocidad y capacidad para manejar grandes volúmenes de datos gráficos.</li>\
+            </ul>\
+            </li>\
+        <li><strong>5. HBM (High Bandwidth Memory):</strong><br>\
+            <ul>\
+                <li>Se encuentra en sistemas de alto rendimiento, como supercomputadoras y estaciones de trabajo avanzadas.</li>\
+                <li>Ofrece un ancho de banda extremadamente alto al colocar los módulos de RAM directamente cerca del procesador.</li>\
+            </ul>\
+            </li>\
      </ul>\
     ",
     ok: {
