@@ -101,6 +101,7 @@ const mostrarMensaje = () => {
       class: 'q-btn--rounded',
       flat: true,
     },
+    style:'width: 500px; max-width: 90vw;'
   });
 };
 const componentesInternos = () => {
@@ -126,6 +127,7 @@ const componentesInternos = () => {
       class: 'q-btn--rounded',
       flat: true,
     },
+    style:'width: 500px; max-width: 90vw;'
   });
 };
 const componentesPerifericos = () => {

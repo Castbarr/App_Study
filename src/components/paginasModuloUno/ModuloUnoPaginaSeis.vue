@@ -9,18 +9,22 @@
                 <q-card-section>
                         <q-card-section>
                             <p class="text-h6">
-                                El Procesador(CPU)
+                                La Unidad de Almacenamiento Principal
                             </p>
                         </q-card-section>
                         <q-card-section class="row items-start items-stretch q-col-gutter-md q-row-gutter-md">
                           <p class="col-12 col-md-7 text-justify q-pr-md">
-                            El procesador, conocido como CPU (Unidad Central de Procesamiento), es como el cerebro de una computadora. Su tarea principal es procesar las instrucciones y coordinar todo el trabajo que realiza el sistema.<br><br>
-                            Por ejemplo, cuando ejecutas un programa o navegas por internet, el procesador trabaja intensamente para interpretar las órdenes y mantener las operaciones en marcha. Se le puede comparar con un chef que maneja múltiples recetas al mismo tiempo, organizando ingredientes (datos) y asegurándose de que todo quede listo a tiempo.<br><br>
-                            En resumen, el CPU es el componente encargado de tomar decisiones y distribuir el trabajo de manera eficiente en tu computadora.
+                            <strong>¿Qué es y para qué sirve La Unidad de Almacenamiento Principal?</strong><br><br>
+                            La Unidad de almacenamiento principal de una computadora —ya sea un disco duro (HDD), una unidad de estado sólido (SSD) o algo similar— es básicamente el lugar donde se guarda todo lo importante en tu computadora. Piensa en él como una especie de “closet digital” donde metes tus archivos, programas, fotos, videos, juegos y hasta el sistema operativo (como Windows, Linux o macOS).<br><br>
+                            Cuando prendes tu computadora, lo primero que hace es ir al disco principal a buscar el sistema para poder arrancar y funcionar. Sin ese disco, la computadora no sabría ni por dónde empezar.<br><br>
+                            En resumen, la unidad de almacenamiento principal es el corazón de tu computadora, y sirve para:<br>
+                            &nbsp;&nbsp;💾Guardar todos tus archivos, programas, juegos, etc.<br>
+                            &nbsp;&nbsp;💾Guardar y Arrancar el sistema operativo.<br>
+                            &nbsp;&nbsp; 🖴 Almacenar datos de forma permanente (a diferencia de la RAM, que es temporal).  
                           </p>
                           <q-img
                           class="col-12 col-md-4 self-center rounded-borders"
-                          src="../../assets/cpu.png"
+                          src="../../assets/CollageDiscos.png"
                           style="max-height: 300px; max-width: 300px; object-fit: contain;"
                           />
                           <q-btn
@@ -40,19 +44,19 @@
                           <q-btn
                           class="blink q-ma-md q-pa-sm self-center"
                           color="secondary"
-                          label="Partes del Procesador"
+                          label="Tipos de Unidad de Almacenamiento"
                           icon="list"
-                          @click="partesDelProcesador"
+                          @click="tiposDeUnidadAlmacenamiento"
                           />
         <q-dialog v-model="dialogoAbierto" persistent>
             <q-card style="max-width: 90vw; max-height: 90vh;">
                 <q-card-section>
-                    <div class="text-h6 text-weight-bold">Video: Procesador(CPU)</div>
+                    <div class="text-h6 text-weight-bold">Video: Almacenamiento Principal</div>
                 </q-card-section>
                 <q-card-section class="q-pa-none">
                     <iframe 
                     width="560" height="315" 
-                    src="https://www.youtube.com/embed/Wquylz_un6w?si=FY3Yjr8rMjtDBVpH" 
+                    src="https://www.youtube.com/embed/ywaGGynYSkQ?si=9-u3_L43VGIOk3Jx" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; 
                     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                     web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -79,7 +83,33 @@ const mostrarMensaje = () => {
   $q.dialog({
     title: 'Información',
     html:true,
-    message: "El encapsulado del procesador, es decir, la parte visible físicamente, suele medir entre 2 y 7 centímetros cuadrados, dependiendo del dispositivo en el que se utilice.",
+    message: "\
+    🔄 <strong>Evolución</strong><br>\
+        <ul>\
+            <li>HDD (Disco Duro)\
+                <ul>\
+                    <li>Surgió en los años 50.</li>\
+                    <li>Basado en discos magnéticos y partes mecánicas.</li>\
+                    <li>Gran capacidad, bajo costo, pero lento y frágil.</li>\
+                </ul>\
+            </li>\
+            <li>SSD (Unidad de Estado Sólido)<br>\
+                <ul>\
+                    <li>Aparece masivamente en los 2000s.</li>\
+                    <li>Usa memoria flash, sin partes móviles.</li>\
+                    <li>Mucho más rápido, silencioso y resistente.</li>\
+                </ul>\
+            </li>\
+        </ul>\
+        🔮 <strong>Futuro</strong><br>\
+        <ul>\
+            <li>Mejoras en memoria flash: 3D NAND, QLC → mayor capacidad y menor precio.</li>\
+            <li>NVMe sobre PCIe: velocidades ultra rápidas.</li>\
+            <li>Memoria persistente (PMEM): fusión de RAM + almacenamiento.</li>\
+            <li>Almacenamiento híbrido y en la nube: más flexible y escalable.</li>\
+            <li>Exploración futura: almacenamiento molecular, óptico y cuántico.</li>\
+        </ul>\
+    ",
     ok: {
       icon:'check',
       label: '',
@@ -89,22 +119,18 @@ const mostrarMensaje = () => {
     style:'width: 500px; max-width: 90vw;'
   });
 };
-const partesDelProcesador = () => {
+const tiposDeUnidadAlmacenamiento = () => {
   $q.dialog({
     html:true,
     title: '<div style="display: flex; justify-content: center; align-items: center; background-color: #c6feb5; border-radius: 50%; width: 50px; height: 50px; margin: 0 auto;" translate="no">\
               <i class="q-icon material-icons" style="color: #006cff; font-size: 34px;" translate="no">priority_high</i>\
             </div>',
     message: 
-    "<ul>\
-        <li><strong>Unidad de Control (CU):</strong><br> Es la parte responsable de dirigir y coordinar todas las operaciones del CPU. Traduce las instrucciones de los programas en señales que controlan las demás partes del procesador.</li>\
-        <li><strong>Unidad Aritmético-Lógica (ALU):</strong><br> Realiza operaciones matemáticas (como suma y resta) y lógicas (como comparaciones). Es fundamental para realizar cálculos y tomar decisiones básicas.</li>\
-        <li><strong>Registros:</strong><br> Son pequeñas áreas de almacenamiento dentro del CPU. Guardan datos e instrucciones temporales para que el procesador pueda acceder a ellos rápidamente durante las operaciones.</li>\
-        <li><strong>Cache:</strong><br> Una memoria de acceso rápido que guarda información frecuente o recientemente utilizada. Ayuda a acelerar el procesamiento al reducir el tiempo de acceso a datos.</li>\
-        <li><strong>Buses:</strong><br> Son líneas de comunicación que transportan datos, direcciones y señales de control entre las distintas partes del CPU y hacia otros componentes de la computadora, como la memoria.</li>\
-        <li><strong>Decodificador de instrucciones:</strong><br> Interpreta las instrucciones que vienen del programa y las traduce para que puedan ser ejecutadas por la ALU y otras unidades.</li>\
-        <li><strong>Reloj (Clock):</strong><br> Genera pulsos eléctricos que sincronizan las operaciones del CPU. La velocidad del reloj determina qué tan rápido puede ejecutar instrucciones.</li>\
-     </ul>\
+    "Hay dos tipos principales:<br>\
+            <ul>\
+                <li><strong>HDD (disco duro tradicional)</strong>: Es como un pequeño tocadiscos que guarda los datos en platos que giran. Tiene partes mecánicas, por eso es un poco más lento, pero suelen tener mucha capacidad y ser más baratos.</li>\
+                <li><strong>SSD (unidad de estado sólido)</strong>: No tiene partes móviles. Es mucho más rápido que el HDD y hace que la computadora prenda y cargue programas en segundos. El único detalle es que suelen ser más caros por cada gigabyte de espacio.</li>\
+            </ul>\
     ",
     ok: {
       icon:"check",

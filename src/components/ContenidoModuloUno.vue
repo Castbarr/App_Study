@@ -18,7 +18,9 @@ import ModuloUnoPaginaDos from './paginasModuloUno/ModuloUnoPaginaDos.vue';
 import ModuloUnoPaginaTres from './paginasModuloUno/ModuloUnoPaginaTres.vue';
 import ModuloUnoPaginaCuatro from './paginasModuloUno/ModuloUnoPaginaCuatro.vue';
 import ModuloUnoPaginaCinco from './paginasModuloUno/ModuloUnoPaginaCinco.vue';
+import ModuloUnoPaginaSeis from './paginasModuloUno/ModuloUnoPaginaSeis.vue';
 import ModuloUnoPaginaDiez from './paginasModuloUno/ModuloUnoPaginaDiez.vue';
+import ModuloUnoPaginaSiete from './paginasModuloUno/ModuloUnoPaginaSiete.vue';
 
 const currentPage = ref(1);
 
@@ -29,6 +31,8 @@ const pages = {
     4: ModuloUnoPaginaTres,
     5: ModuloUnoPaginaCuatro,
     6: ModuloUnoPaginaCinco,
+    7: ModuloUnoPaginaSeis,
+    8: ModuloUnoPaginaSiete,
     11: ModuloUnoPaginaDiez,
 };
 

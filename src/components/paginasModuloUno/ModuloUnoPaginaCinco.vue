@@ -99,41 +99,35 @@ const tiposDeMemoriaRam = () => {
               <i class="q-icon material-icons" style="color: #006cff; font-size: 34px;" translate="no">priority_high</i>\
             </div>',
     message: 
-    "<ul>\
-        <li><strong>1. DDR4 (Double Data Rate 4):</strong><br>\
+    "\
+        <strong>1. DDR4 (Double Data Rate 4):</strong><br>\
             <ul>\
                 <li>Es el estándar más común en dispositivos modernos como computadoras de escritorio, laptops y servidores.</li>\
                 <li>Ofrece velocidades rápidas, bajo consumo de energía y capacidades de almacenamiento mayores que las generaciones anteriores.</li>\
                 <li>Su frecuencia suele oscilar entre 2133 MHz y 3200 MHz (o más en versiones optimizadas).</li>\
             </ul>\
-            </li>\
-        <li><strong>2. DDR5 (Double Data Rate 5):</strong><br>\
+        <strong>2. DDR5 (Double Data Rate 5):</strong><br>\
             <ul>\
                 <li>Es la evolución más reciente de la RAM DDR y está ganando popularidad rápidamente.</li>\
                 <li>Proporciona mayor ancho de banda, menor latencia y una eficiencia energética aún mejor que DDR4.</li>\
                 <li>Ideal para tareas de alto rendimiento como gaming, edición de video y aprendizaje automático.</li>\
             </ul>\
-            </li>\
-        <li><strong>3. LPDDR (Low-Power DDR):</strong><br>\
+        <strong>3. LPDDR (Low-Power DDR):</strong><br>\
             <ul>\
                 <li>Se utiliza en dispositivos móviles como smartphones, tablets y ultrabooks.</li>\
                 <li>Diseñada para un consumo energético reducido, prolonga la duración de la batería en dispositivos portátiles.</li>\
                 <li>Ejemplos recientes son LPDDR4 y LPDDR5.</li>\
             </ul>\
-            </li>\
-        <li><strong>4. GDDR (Graphics Double Data Rate):</strong><br>\
+        <strong>4. GDDR (Graphics Double Data Rate):</strong><br>\
             <ul>\
                 <li>Memoria especializada para tarjetas gráficas (GPUs) en aplicaciones como videojuegos, edición 3D y minería de criptomonedas.</li>\
                 <li>Ejemplos actuales incluyen GDDR5, GDDR6 y GDDR6X, que ofrecen alta velocidad y capacidad para manejar grandes volúmenes de datos gráficos.</li>\
             </ul>\
-            </li>\
-        <li><strong>5. HBM (High Bandwidth Memory):</strong><br>\
+        <strong>5. HBM (High Bandwidth Memory):</strong><br>\
             <ul>\
                 <li>Se encuentra en sistemas de alto rendimiento, como supercomputadoras y estaciones de trabajo avanzadas.</li>\
                 <li>Ofrece un ancho de banda extremadamente alto al colocar los módulos de RAM directamente cerca del procesador.</li>\
             </ul>\
-            </li>\
-     </ul>\
     ",
     ok: {
       icon:"check",
@@ -141,6 +135,7 @@ const tiposDeMemoriaRam = () => {
       class: 'q-btn--rounded',
       flat: true,
     },
+    style:'width: 500px; max-width: 90vw;'
   });
 };
 

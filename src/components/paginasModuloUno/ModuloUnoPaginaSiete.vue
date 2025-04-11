@@ -9,18 +9,22 @@
                 <q-card-section>
                         <q-card-section>
                             <p class="text-h6">
-                                El Procesador(CPU)
+                                La Tarjeta Gárfica
                             </p>
                         </q-card-section>
                         <q-card-section class="row items-start items-stretch q-col-gutter-md q-row-gutter-md">
                           <p class="col-12 col-md-7 text-justify q-pr-md">
-                            El procesador, conocido como CPU (Unidad Central de Procesamiento), es como el cerebro de una computadora. Su tarea principal es procesar las instrucciones y coordinar todo el trabajo que realiza el sistema.<br><br>
-                            Por ejemplo, cuando ejecutas un programa o navegas por internet, el procesador trabaja intensamente para interpretar las órdenes y mantener las operaciones en marcha. Se le puede comparar con un chef que maneja múltiples recetas al mismo tiempo, organizando ingredientes (datos) y asegurándose de que todo quede listo a tiempo.<br><br>
-                            En resumen, el CPU es el componente encargado de tomar decisiones y distribuir el trabajo de manera eficiente en tu computadora.
+                            <strong>¿Qué es y para qué sirve La Tarjeta Gráfica?</strong><br><br>
+                            Una tarjeta gráfica, también conocida como GPU (Graphics Processing Unit), 
+                            es un componente esencial de una computadora que se encarga de procesar y generar las imágenes que ves en la pantalla. 
+                            Desde las interfaces de usuario hasta los gráficos complejos de videojuegos o aplicaciones de diseño, 
+                            la tarjeta gráfica traduce los datos del procesador en representaciones visuales comprensibles para el usuario.<br><br>
+                            En resumen, la tarjeta gráfica es fundamental para cualquier tarea que requiera procesamiento visual intensivo, 
+                            mejorando la calidad y fluidez de las imágenes en pantalla.  
                           </p>
                           <q-img
                           class="col-12 col-md-4 self-center rounded-borders"
-                          src="../../assets/cpu.png"
+                          src="../../assets/TarjetaGrafica.png"
                           style="max-height: 300px; max-width: 300px; object-fit: contain;"
                           />
                           <q-btn
@@ -40,19 +44,19 @@
                           <q-btn
                           class="blink q-ma-md q-pa-sm self-center"
                           color="secondary"
-                          label="Partes del Procesador"
+                          label="Tipos de Tarjeta Gráfica"
                           icon="list"
-                          @click="partesDelProcesador"
+                          @click="tiposDeTarjetaGrafica"
                           />
         <q-dialog v-model="dialogoAbierto" persistent>
             <q-card style="max-width: 90vw; max-height: 90vh;">
                 <q-card-section>
-                    <div class="text-h6 text-weight-bold">Video: Procesador(CPU)</div>
+                    <div class="text-h6 text-weight-bold">Video: Almacenamiento Principal</div>
                 </q-card-section>
                 <q-card-section class="q-pa-none">
                     <iframe 
                     width="560" height="315" 
-                    src="https://www.youtube.com/embed/Wquylz_un6w?si=FY3Yjr8rMjtDBVpH" 
+                    src="https://www.youtube.com/embed/ywaGGynYSkQ?si=9-u3_L43VGIOk3Jx" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; 
                     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                     web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -79,7 +83,20 @@ const mostrarMensaje = () => {
   $q.dialog({
     title: 'Información',
     html:true,
-    message: "El encapsulado del procesador, es decir, la parte visible físicamente, suele medir entre 2 y 7 centímetros cuadrados, dependiendo del dispositivo en el que se utilice.",
+    message: "\
+    Las tarjetas gráficas han experimentado una notable evolución desde sus inicios en los años 80,\
+    cuando apenas podían mostrar texto en pantallas monocromáticas. Con el tiempo,\
+    se convirtieron en componentes capaces de procesar gráficos 3D y colores vibrantes,\
+    gracias a avances como la incorporación de memoria DDR y núcleos paralelos programables.<br><br>\
+    En la actualidad, las GPUs no solo se utilizan para videojuegos, sino que también desempeñan un papel\
+    crucial en campos como la inteligencia artificial, el aprendizaje automático y la creación de contenido digital.\
+    La integración de tecnologías como el renderizado neuronal y el DLSS 4 ha permitido mejorar significativamente\
+    la calidad de imagen y el rendimiento en tiempo real.<br><br>\
+    De cara al futuro, se espera que las tarjetas gráficas continúen avanzando en eficiencia energética y capacidades\
+    de procesamiento, con un enfoque creciente en la integración de inteligencia artificial y aprendizaje automático.\
+    Además, la tendencia hacia arquitecturas más potentes y versátiles, como la serie RTX 50 de Nvidia,\
+    indica un camino hacia GPUs capaces de manejar tareas cada vez más complejas en diversos ámbitos.\
+    ",
     ok: {
       icon:'check',
       label: '',
@@ -89,22 +106,18 @@ const mostrarMensaje = () => {
     style:'width: 500px; max-width: 90vw;'
   });
 };
-const partesDelProcesador = () => {
+const tiposDeTarjetaGrafica = () => {
   $q.dialog({
     html:true,
     title: '<div style="display: flex; justify-content: center; align-items: center; background-color: #c6feb5; border-radius: 50%; width: 50px; height: 50px; margin: 0 auto;" translate="no">\
               <i class="q-icon material-icons" style="color: #006cff; font-size: 34px;" translate="no">priority_high</i>\
             </div>',
     message: 
-    "<ul>\
-        <li><strong>Unidad de Control (CU):</strong><br> Es la parte responsable de dirigir y coordinar todas las operaciones del CPU. Traduce las instrucciones de los programas en señales que controlan las demás partes del procesador.</li>\
-        <li><strong>Unidad Aritmético-Lógica (ALU):</strong><br> Realiza operaciones matemáticas (como suma y resta) y lógicas (como comparaciones). Es fundamental para realizar cálculos y tomar decisiones básicas.</li>\
-        <li><strong>Registros:</strong><br> Son pequeñas áreas de almacenamiento dentro del CPU. Guardan datos e instrucciones temporales para que el procesador pueda acceder a ellos rápidamente durante las operaciones.</li>\
-        <li><strong>Cache:</strong><br> Una memoria de acceso rápido que guarda información frecuente o recientemente utilizada. Ayuda a acelerar el procesamiento al reducir el tiempo de acceso a datos.</li>\
-        <li><strong>Buses:</strong><br> Son líneas de comunicación que transportan datos, direcciones y señales de control entre las distintas partes del CPU y hacia otros componentes de la computadora, como la memoria.</li>\
-        <li><strong>Decodificador de instrucciones:</strong><br> Interpreta las instrucciones que vienen del programa y las traduce para que puedan ser ejecutadas por la ALU y otras unidades.</li>\
-        <li><strong>Reloj (Clock):</strong><br> Genera pulsos eléctricos que sincronizan las operaciones del CPU. La velocidad del reloj determina qué tan rápido puede ejecutar instrucciones.</li>\
-     </ul>\
+    "Existen dos tipos principales:<br>\
+            <ul>\
+                <li><strong>Integradas</strong>:  Están incorporadas en el procesador o en la placa base y son adecuadas para tareas básicas como navegar por internet o utilizar aplicaciones de oficina.</li>\
+                <li><strong>Dedicadas</strong>: Son componentes independientes que ofrecen un rendimiento superior, ideales para videojuegos exigentes, edición de video y diseño gráfico. Estas tarjetas cuentan con su propia memoria (VRAM) y están diseñadas específicamente para manejar gráficos pesados y complejos.</li>\
+            </ul>\
     ",
     ok: {
       icon:"check",
