@@ -6,6 +6,6 @@
     </q-page>
 </template>
 <script setup>
-import ContenidoModuloUno from 'src/components/ContenidoModuloUno.vue';
+import ContenidoModuloUno from 'components/ContenidoModuloUno.vue';
 
 </script>

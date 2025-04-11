@@ -49,7 +49,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import MenuCursos from 'src/components/MenuCursos.vue'
+import MenuCursos from 'components/MenuCursos.vue'
 
 const leftDrawerOpen = ref(false)
 

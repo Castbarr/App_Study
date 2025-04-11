@@ -32,7 +32,7 @@
                             </p>
                             <q-img
                             class="col-5 self-center"
-                            src="../../assets/computacion.png"
+                            src="assets/computacion.png"
                             style="max-height: 300px; max-width: 300px; object-fit: contain;"
                             />
                         <q-btn

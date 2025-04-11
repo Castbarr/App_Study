@@ -65,7 +65,7 @@ const mostrarInfo = () => {
 </script>
 <style scoped>
   .q-page {
-    background: url(../assets/Fondo.png) no-repeat center center;
+    background: url(/assets/Fondo.png) no-repeat center center;
     background-size: cover;
     height: 100vh;
   }

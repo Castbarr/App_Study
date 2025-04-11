@@ -24,7 +24,7 @@
                           </p>
                           <q-img
                           class="col-12 col-md-4 self-center rounded-borders"
-                          src="../../assets/TarjetaGrafica.png"
+                          src="assets/TarjetaGrafica.png"
                           style="max-height: 300px; max-width: 300px; object-fit: contain;"
                           />
                           <q-btn

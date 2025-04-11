@@ -28,7 +28,7 @@
                           </p>
                           <q-img
                           class="col-12 col-md-4 self-center rounded-borders"
-                          src="../../assets/hardware.png"
+                          src="assets/hardware.png"
                           style="max-height: 300px; max-width: 300px; object-fit: contain;"
                           />
                           <q-btn

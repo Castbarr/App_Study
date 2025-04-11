@@ -20,7 +20,7 @@
                             </ul>
                         </div>
                         <div class="col-12 col-md-6 flex flex-center">
-                            <img src="../../assets/computadora.png" alt="computadoras" class="responsive-img" style="border-radius: 15px;">
+                            <img src="assets/computadora.png" alt="computadoras" class="responsive-img" style="border-radius: 15px;">
                         </div>
                     </div>
                 </q-card-section>
