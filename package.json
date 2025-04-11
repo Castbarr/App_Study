@@ -2,7 +2,7 @@
   "name": "app_study",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Quasar App",
+  "productName": "app_study",
   "author": "Juan Pablo Castillo Barrera <jpcb777@hotmail.com>",
   "type": "module",
   "private": true,
@@ -13,6 +13,7 @@
     "dev": "quasar dev",
     "build": "quasar build",
     "postinstall": "quasar prepare",
+    "predeploy": "quasar build -m pwa",
     "deploy": "gh-pages -d dist/pwa"
   },
   "dependencies": {
