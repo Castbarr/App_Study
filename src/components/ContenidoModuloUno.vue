@@ -33,7 +33,7 @@ const pages = {
     6: ModuloUnoPaginaCinco,
     7: ModuloUnoPaginaSeis,
     8: ModuloUnoPaginaSiete,
-    11: ModuloUnoPaginaDiez,
+    9: ModuloUnoPaginaDiez,
 };
 
 function navigate(direction) {
