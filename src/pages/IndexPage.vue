@@ -1,10 +1,11 @@
 <template>
-  <q-page class="flex flex-center">
+  <q-page class="flex flex-center"
+  :style="`background: url(${fondo}) no-repeat center center, #000; background-size: cover; height: 100vh;`">
     <div style="position: absolute; top: 20px; left: 10px; color: white; font-size: 0.9rem;">
       <q-item-label><q-icon name="arrow_back"/>Click en los Modulos para comenzar</q-item-label>
     </div>
-    <ul class="text-h6 q-pa-md">
-      <h5 class="text-h6 q-ma-md">Contenido</h5>
+    <ul class="text-h5 q-pa-md">
+      <h5 class="text-h5 q-ma-md">Contenido</h5>
       <li>Modulo 1. Introducción a la Computación</li>
       <li>Modulo 2. Funcionamiento interno de una Computadora</li>
       <li>Modulo 3. Internet y la Web</li>
@@ -27,6 +28,7 @@
 </template>
 
 <script setup>
+import fondo from '/assets/Fondo.png';
 import { useQuasar } from 'quasar';
 const $q = useQuasar();
 const mostrarMensaje = () => {
@@ -63,14 +65,9 @@ const mostrarInfo = () => {
   });
 };
 </script>
-<style scoped>
-  .q-page {
-    background: url(/assets/Fondo.png) no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-  }
-
-  .text-h6 {
+<style>
+  
+  .text-h5 {
     font-size: 1.25rem;
     font-weight: 700; /* Changed to bold */
     line-height: 1.6;

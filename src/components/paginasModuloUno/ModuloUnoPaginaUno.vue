@@ -3,7 +3,7 @@
         <div class="q-gutter-sm flex flex-center">
             <q-card class="responsive-card">
                 <q-card-section>
-                    <div class="text-h5 text-weight-bold text-center">¿Qué es la Computación?</div>
+                    <div class="text-h4 text-weight-bold text-center">¿Qué es la Computación?</div>
                 </q-card-section>
 
                 <q-card-section>

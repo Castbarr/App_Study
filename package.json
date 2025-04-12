@@ -11,10 +11,8 @@
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
-    "build": "quasar build",
-    "postinstall": "quasar prepare",
-    "predeploy": "quasar build -m pwa",
-    "deploy": "gh-pages -d dist/pwa"
+    "build": "quasar build -m pwa",
+    "postinstall": "quasar prepare"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
